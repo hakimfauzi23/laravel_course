@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <a href="/all"> Lihat Semua To Do List</a>
+    <a href="/"> Lihat Semua To Do List</a>
     <div class="text-center">
         <h1>Todo List {{date('d-M-Y')}}</h1>
     </div>

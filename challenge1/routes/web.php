@@ -13,12 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
-Route::get('/all', 'App\Http\Controllers\TodoController@index')->name('todo.lists');
+Route::get('/', 'App\Http\Controllers\TodoController@index')->name('todo.lists');
 Route::get('/lists', 'App\Http\Controllers\TodoController@show')->name('todo.lists');
 Route::get('/create', 'App\Http\Controllers\TodoController@create')->name('todo.create');
 Route::post('/store', 'App\Http\Controllers\TodoController@store')->name('todo.store');
